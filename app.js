@@ -9,7 +9,7 @@ const generateScraperUrl = (apiKey) => `http://api.scraperapi.com?api_key=${apiK
 // So our app can parse JSON data
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/', (res) => {
   res.send("My simple API!");
 });
 
